@@ -44,4 +44,4 @@ jobs:
           Configuration: ${{ matrix.configuration }}
 
       - name: Execute unit tests
-        run: dotnet test $env:Test_Project_Path --no-build --verbosity normal
+        run: dotnet test $env:Test_Project_Path --verbosity normal
