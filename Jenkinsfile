@@ -26,7 +26,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'dotnet test Horizons.Tests.Unit/Horizons.Tests.Unit.csproj --no-build --verbosity normal'
+                bat 'dotnet test Horizons.Tests.Unit/Horizons.Tests.Unit.csproj --no-build --configuration Release --verbosity normal'
             }
         }
     }
